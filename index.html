@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Ubiquity Design Studio</title>
+  <meta name="description" content="The Ubiquity Design Studio provides it's customers best in the class services in designing, printing and web designing & development.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -14,15 +14,14 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Place favicon.ico in the root directory -->
 
-  <!-- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css"> -->
-
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -31,35 +30,134 @@
 
   <!-- Add your site or application content here -->
 
-  <div class="site-container">
-    <div class="menubar">
-      <div class="menu-items">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">What do we do</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Conact Us</a></li>
-        </ul>
+  <!-- ////////////////////////////////HEADER//////////////////////////////// -->
+  <div class="wrapper">
+    <header>
+      <!-- Quick Contact Bar -->
+      <div class="q-cont">
+        <div class="container">
+          <div class="flex-box">
+            <div class="contacts">
+              <p>
+                <ion-icon class="orange" name="call-outline"></ion-icon><a href="tel:+919663396036">+91 96633 96036</a>
+                <ion-icon class="orange" name="mail-outline"></ion-icon><a href="mailto:info@theubiquity.in">info@theubiquity.in</a>
+              </p>
+            </div>
+            <div class="smedia">
+              <p><a href="">Follow Us:</a></p>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quick Contact Bar -->
+      <menu>
+        <div class="container">
+          <div class="flex-box">
+            <div class="logo">
+              <a href="index.html"><img src="assets/img/uds-hr-01-02.svg" alt="" width="100%" height="auto"></a>
+            </div>
+            <div class="menubar">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li>
+                  <a href="#">Services</a>
+                  <div class="servmenu">
+                    <ul>
+                      <li><a href="#">Domain Registration</a></li>
+                      <li><a href="#">Linux Hosting</a></li>
+                      <li><a href="#">Website Development</a></li>
+                      <li><a href="#">Website Maintenance</a></li>
+                      <li><a href="#">Website Hosting</a></li>
+                      <li><a href="#">Website Designing</a></li>
+                      <li><a href="#">Website Development</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Technology</a>
+                  <div class="servmenu">
+                    <ul>
+                      <li><a href="#">Domain Registration</a></li>
+                      <li><a href="#">Linux Hosting</a></li>
+                      <li><a href="#">Website Development</a></li>
+                      <li><a href="#">Website Maintenance</a></li>
+                      <li><a href="#">Website Hosting</a></li>
+                      <li><a href="#">Website Designing</a></li>
+                      <li><a href="#">Website Development</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </menu>
+    </header>
+    <!-- ////////////////////////////////HEADER//////////////////////////////// -->
+
+    <!-- /////////////////////////////////HOME///////////////////////////////// -->
+    <div class="home">
+      <div class="container">
+        <div class="home-text">
+          <div class="home-text-box">
+            <!-- <p>WE ARE NOT JUST ANOTHER WEB DESIGN AENCY</p> -->
+            <h1>Give your business <br> a fresh start</h1>
+            <p>We use innovative approach to your business projects</p>
+            <a class="button" href="">KNOW MORE</a>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- /////////////////////////////////HOME///////////////////////////////// -->
+
+    <!-- ///////////////////////////////ABOUT US/////////////////////////////// -->
+    <div id="aboutus">
+      <div class="container">
+        <div class="about-text-box">
+          <div class="abtustext">
+            <p class="bold">ABOUT US</p>
+            <h1>Creative <br> Web Designing</h1>
+            <p>In addition to design and branding, our clients get to enjoy the time tested and refined workflow that is custom tailored to each project!</p>
+            <a class="button" href="">KNOW MORE</a>
+          </div>
+          <div class="abtus-techs">
+            <div class="abtus-techs-parts">
+              <h2>Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda minus harum amet voluptatibus. Nam quidem ratione quos itaque et.</p>
+              <a class="button" href="">KNOW MORE</a>
+            </div>
+            <div class="abtus-techs-parts">
+              <h2>Development</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda minus harum amet voluptatibus. Nam quidem ratione quos itaque et.</p>
+              <a class="button" href="">KNOW MORE</a>
+            </div>
+            <div class="abtus-techs-parts">
+              <h2>Hosting</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda minus harum amet voluptatibus. Nam quidem ratione quos itaque et.</p>
+              <a class="button" href="">KNOW MORE</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- ///////////////////////////////ABOUT US/////////////////////////////// -->
 
-    <div id="home">
-      <!-- <img src="assets/images/joanna-kosinska-1.jpg" alt="" width="100%"> -->
-    </div>
-
-    <div id="aboutus">
+    <!-- //////////////////////////////TECHNOLOGY////////////////////////////// -->
+    <div id="techno">
 
     </div>
+    <!-- //////////////////////////////TECHNOLOGY////////////////////////////// -->
 
   </div>
 
-
-  <!-- Add your site or application content here -->
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="assets/js/app.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -67,7 +165,6 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <script src="//code.tidio.co/flbpao2lfk4c2gpewv2m4dcqgwfs4hgm.js" async></script>
 </body>
 
 </html>
