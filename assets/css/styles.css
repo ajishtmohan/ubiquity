@@ -31,6 +31,14 @@ html {
     hyphens: none;
 }
 
+.paratext-dark {
+    font-size: 1em;
+    color: #20242E;
+    line-height: 2em;
+    font-weight: 300;
+    hyphens: none;
+}
+
 .downarrow {
     text-align: center;
     width: 50px;
@@ -45,6 +53,13 @@ html {
 
 .downarrow:hover {
     bottom: 60px;
+}
+
+.subhead {
+    font-weight: 300;
+    color: #E94E1B;
+    font-size: 2em;
+    margin-bottom: 0;
 }
 
 
@@ -101,10 +116,17 @@ html {
     width: 50%;
 }
 
-.orange {
+.orange-icons {
     color: #E94E1B;
     font-size: 1.2em;
     vertical-align: middle;
+}
+
+.orange {
+    color: #E94E1B;
+    font-size: 1.2em;
+    position: absolute;
+    top: -20%;
 }
 
 /* MENU BAR */
@@ -119,12 +141,18 @@ menu {
 }
 
 .logo {
-    width: 200px;
+    width: 50%;
     height: auto;
     padding: 29px 0;
     position: relative;
     display: block;
     float: left;
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.mainmenu {
+    transition: .3s ease-in-out;
 }
 
 .menubar {
@@ -148,7 +176,7 @@ menu {
     height: 100px;
 }
 
-.menubar ul li a {
+.menulinks {
     display: block;
     position: relative;
     text-decoration: none;
@@ -157,7 +185,7 @@ menu {
     transition: 0.3s;
 }
 
-.menubar ul li a:hover {
+.menulinks:hover {
     color: #E94E1B;
 }
 
@@ -195,6 +223,13 @@ menu {
     display: block;
     margin: 0;
     padding: 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.servmenu ul li a:hover{
+    color: #E94E1B;
 }
 
 .servmenu ul li a:last-child{
@@ -228,7 +263,7 @@ menu {
 
 .home-text {
     width: 600px;
-    height: calc(100vh - 150px);
+    height: 100vh;
     display: block;
     position: absolute;
 }
@@ -236,7 +271,7 @@ menu {
 .home-text-box {
     height: auto;
     position: absolute;
-    bottom: 80px;
+    bottom: 15%;
 }
 
 .home-text P {
@@ -272,6 +307,26 @@ menu {
     background-color: #E94E1B;
     margin-left: 5px;
 }
+
+.button-dark {
+    padding: 8px 15px;
+    border: 1px solid #E94E1B;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: .8em;
+    font-weight: 300;
+    transition: .3s;
+}
+
+.button-dark:hover {
+    background-color: #E94E1B;
+    color: white;
+    margin-left: 5px;
+}
+
+
 /* /////////////////////////////////HOME///////////////////////////////// */
 
 
@@ -354,6 +409,26 @@ menu {
     width: 100%;
     height: 100vh;
 }
+
+#services h1 {
+    margin: 0;
+    padding: 0;
+    color: #E94E1B;
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.service {
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
 
 /* //////////////////////////////TECHNOLOGY////////////////////////////// */
 
