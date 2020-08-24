@@ -13,7 +13,7 @@ window.onscroll = function() {
     setTimeout(function(){
       document.querySelector('.logo1').style.opacity = '1';
     }, 500);
-    document.querySelector('.logo1').style.padding = '29px 0';
+    document.querySelector('.logo1').style.padding = '24px 0';
 
     var links = document.querySelectorAll('.menulinks');
     for (var i = 0; i < links.length; i ++) {
@@ -32,7 +32,7 @@ window.onscroll = function() {
     setTimeout(function(){
       document.querySelector('.logo2').style.opacity = '1';
     }, 500);
-    document.querySelector('.logo2').style.padding = '12px 0';
+    document.querySelector('.logo2').style.padding = '11px 0';
 
     var links = document.querySelectorAll('.menulinks');
     for (var i = 0; i < links.length; i ++) {
