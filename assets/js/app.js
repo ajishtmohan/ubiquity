@@ -4,11 +4,18 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.querySelector('.header').style.top = '0px';
     document.querySelector('.mainmenu').style.height = '100px';
-    document.querySelector('.logo').innerHTML = '<a href="index.html"><img src="assets/img/uds-hr-01.svg" alt="Ubiquity Design Studio Logo" width="35%" height="auto"></a>';
-    document.querySelector('.logo').style.padding = '29px 0';
+    
+    document.querySelector('.logo2').style.opacity = '0';
+    setTimeout(function(){
+      document.querySelector('.logo2').style.display = 'none';
+      document.querySelector('.logo1').style.display = 'block';
+    }, 300);
+    setTimeout(function(){
+      document.querySelector('.logo1').style.opacity = '1';
+    }, 500);
+    document.querySelector('.logo1').style.padding = '29px 0';
 
     var links = document.querySelectorAll('.menulinks');
-    console.log(links)
     for (var i = 0; i < links.length; i ++) {
       links[i].style.padding = '40px 20px';
     }
@@ -16,8 +23,16 @@ window.onscroll = function() {
   } else {
     document.querySelector('.header').style.top = '-50px';
     document.querySelector('.mainmenu').style.height = '50px'
-    document.querySelector('.logo').innerHTML = '<a href="index.html"><img src="assets/img/uds-hr-02.svg" alt="Ubiquity Design Studio Logo" width="50%" height="auto"></a>';
-    document.querySelector('.logo').style.padding = '14px 0';
+
+    document.querySelector('.logo1').style.opacity = '0';
+    setTimeout(function(){
+      document.querySelector('.logo1').style.display = 'none';
+      document.querySelector('.logo2').style.display = 'block';
+    }, 300);
+    setTimeout(function(){
+      document.querySelector('.logo2').style.opacity = '1';
+    }, 500);
+    document.querySelector('.logo2').style.padding = '12px 0';
 
     var links = document.querySelectorAll('.menulinks');
     for (var i = 0; i < links.length; i ++) {
